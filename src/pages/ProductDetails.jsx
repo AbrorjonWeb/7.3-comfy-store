@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getProduct } from "../api";
+
 import { useCart } from "../context/CartContext";
+import { getProduct } from "../Api";
 
 export default function ProductDetails() {
   const { id } = useParams();
